@@ -1,4 +1,4 @@
-# Developing  Python
+# Developing  Python Algorithms for AIMA Book (Pseudocode)
 
 Tanish Sharrma, AIMA 2019
 
@@ -19,7 +19,7 @@ Tanish Sharrma, AIMA 2019
 | S.No.    |                                         TOPIC                                        |
 |----------|--------------------------------------------------------------------------------------|
 |   1      | Abstract                                                                             |
-|   2      | Technical Details	                                                                  |
+|   2      | Technical Details and Plan                                                           |
 |   3      | Motivation and Personal Statement                                                    |
 |   4      | Coding Samples                                                                       |
 |   5      | Project Timeline and Details                                                         |
@@ -34,7 +34,7 @@ For the upcoming 4th edition of "Artificial Intelligence: A Modern Approach", to
 | ------------- | -------------------------------- |------------------ |
 | Intermediate  | Python, Machine Learning & AI    | Pierre de Lacaze  |
                   
-## Technical Details
+## Technical Details and Plan
 
   - Implementing pseudocode for algorithms for easy and simple understand of functions.
 
@@ -42,7 +42,17 @@ For the upcoming 4th edition of "Artificial Intelligence: A Modern Approach", to
   
   - Coding and providing examples for Theoretical Machine Learnning and Artificial Intelligence.
   
-  - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well
+  - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well.
+  
+  - Learn about the requirements of the author.
+    
+  - Understand the procedure and code being followed in the previous editions.
+    
+  - Learn about the models and methods followed and the algoritms explained in the book for better understanding of the coding style to be followed.
+    
+  - Study the previous AIMA GSoc projects
+  
+  - After understanding the work during the "Community Bonding period", start creating pull requests from the github repository and begin coding.
   
   
 ## Motivation and Personal Statement
@@ -53,6 +63,7 @@ I have a lot of experience programming in Python and have won competitions solvi
 
 I have been programming for over 12 years and have Machine Learning, Artificial Intelligence and CUDA experience as well. I have attended various conferences on GPU computing and am aware of the enormous potential it has. This summer, I will solely be focusing on Google Summer of Code and have no other commitments.
 
+I have undertaken several classes in my college related to Mathematics, Statistics and Computing. I have profound interest in Game Theory and found ways to implement it in Python (Axelrod Lib Python)
 
 ## Coding Samples (Python):
 
@@ -275,59 +286,7 @@ print (splitOdd10([10, 7, 5, 5]))           # Returns True
 print (splitOdd10([10, 0, 5, 5]))           # Returns False
 print (splitOdd10([10, 7, 5, 5, 2]))        # Returns True
 print (splitOdd10([10, 7, 5, 5, 1]))        # Returns False
-```
-
-## Timeline
-
-### **Community Bonding Period** : May 6th - May 27th 
-
-Before the official time period begins, I plan to further study about the architecture and structure of the CuPy library and its hardware aspect. During this period, under my mentor, I plan to :
-
-    - Solve issues and bugs being brought up by the members of the community.
-    
-    - Learn more about the long term goals for the CuPy project.
-    
-    - Create an environment which makes it easier for future developers to join this project.
-    
-    - Set up a blog and write weekly about the progress done.
-    
-
-### Phase 1 : May 27th - June 24th
-	
-    - Adding currently absent Numpy functionalities to CuPy.
-    
-    - Introducing a few SciPy functionalities.
-    
-    - Developing a Numpy fallback model for missing modules and functions in CuPy
-    
-    - Rigorously testing and comparing code to make it easier for NumPy users to port of CuPy.
-    
-    - Fixing bugs and Issues that come up with existsing NumPy functionalities.
-    
-
-### Phase 2 : June 28th - July 22nd
-	
-    - Adding Statistical tools to the Cupy Library.
-    
-    - Developing "Statistical Inference" tools and functions for bias and estimator inference.
-    
-    - Adding Sampling modules along with Population and Survey Sampling techniques and tools.
-    
-    - Making the transitioning from CPU based to GPU based more efficient and easier.
-    
-    - Developing tools for t-test, f-test and Ho statistics.
-
-
-### Phase 3 : July 26th - August 19th
-
-    - Introducing Machine Learning models (mainly related to Mathematics and Statistcis) to the CuPy library and ensure its stability.
-    
-    - Developing Regression analysis tools (for Linear, Bivatriate and Multivariate analysis)
-    
-    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e) and determining the BLUE (Best Linear Unbiast Estimator for both non- full rank and full rank cases)
-    
-    - Calculation of ANOVA Tables and determining of Confidence Interval / Limits for the provided data.
-        
+```        
 
 ## Other Projects and Work Experience
 
