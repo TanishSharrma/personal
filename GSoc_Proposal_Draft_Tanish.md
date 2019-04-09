@@ -176,7 +176,7 @@ I have undertaken substantial number of Mathematics and Computing classes and am
 
 |Data Size (in Million)	| NumPy		|  CuPy		|
 |-------------------------------------------------------|
-|							|
+|			|		|		|
 |  -  1			| 0.033001184	| 0.566046238	|
 |  -  2			| 0.080005407	| 0.01743865	|
 |  -  5			| 0.206018448	| 0.039004087	|
