@@ -29,20 +29,24 @@ Tanish Sharrma, NumFocus 2019
 
 ## Abstract
 
-CuPy is an open-source matrix library accelerated with NVIDIA CUDA. It also uses CUDA-related libraries including cuBLAS, cuDNN, cuRand, cuSolver, cuSPARSE, cuFFT and NCCL to make full use of the GPU architecture. Aiming to bring Numpy syntax coding into the modern age of GPU calculations by adding advanced FFT functions into CuPy.
+CuPy is an open-source matrix library accelerated with NVIDIA CUDA. Aiming to bring Numpy syntax coding into the modern age of GPU calculations by adding advanced functions into CuPy. CuPy covers many of the functions that are provided by Numpy, but not all of them. To review the Numpy functions that CuPy doesn't cover yet, and implement them in CuPy along with some Scipy functions to use the full speed of the GPU. Developing a Numpy fallback model for missing modules and functions in CuPy.
+
+Providing for various Statistical analytics and Machine Learning tools to be implemented as well such as :  Regression Analysis, ANOVA tables, Linear Models, Confidence Intervals, Statistical Inference and Survey Sampling modules. This, expanding the number of functions available for use on the GPU to allow more code to execute transparently on the GPU.
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
 | Intermediate  | Python, NumPy |   @asi1024  |
 |               | SciPy & CUDA  |             |
                   
-## Brief Roadmap and Aim
+## Technical Details
 
-Expand the number of functions available for use on the GPU to allow more code to execute transparently on the GPU. Also, CuPy covers many of the functions that are provided by Numpy, but not all of them. To review the Numpy functions that CuPy doesn't cover yet, and implement them in CuPy to use the full speed of the GPU.
-
-Adding SciPy functions along with adding new Statistical functionalities to the project.
-
-To Formalize CuPy Benchmark for code testing, when doing Continuous Integration testing for CuPy, there isn't a good estimator for the speed of the code. CuPy is all about improved speed of calculation on the GPU, so speed matters. Develop a comprehensive benchmark for CuPy to help assess how much speed enhancements help, and make sure that other code changes don't damage performance.
+  - All the work would be done in Python.
+  
+  - Statistical and Mathematical analytics tools would be developed to accomodate large data sets.
+  
+  - Introduction of simple Machine Learning tools.
+  
+  - All changes would be commited to the "master" branch in the CuPy github repository.
 
 ## CuPy: Pre-GSoc Project Commits, Pull Requests and Issues and Community Work
 
@@ -103,10 +107,6 @@ This experiment was conducted on a computer with the following hardware :
 
 Before the official time period begins, I plan to further study about the architecture and structure of the CuPy library and its hardware aspect. During this period, under my mentor, I plan to :
 
-    - Add NumPy functionalities to CuPy
-    
-    - Help develop a NumPy fallback function for the functions and modules currently absent from CuPy. 
-    
     - Solve issues and bugs being brought up by the members of the community.
     
     - Learn more about the long term goals for the CuPy project.
@@ -118,15 +118,15 @@ Before the official time period begins, I plan to further study about the archit
 
 ### Phase 1 : May 27th - June 24th
 	
-    - Adding Missing Numpy functionalities
+    - Adding currently absent Numpy functionalities to CuPy.
     
-    - Introducing SciPy functionalities
+    - Introducing a few SciPy functionalities.
     
-    - Developing a fallback model for missing NumPy modules and functions
+    - Developing a Numpy fallback model for missing modules and functions in CuPy
     
-    - Rigorously testing and comparing code to make it easier for NumPy users to port of CuPy
+    - Rigorously testing and comparing code to make it easier for NumPy users to port of CuPy.
     
-    - Fixing bugs and Issues that come up with adding NumPy functionalities.
+    - Fixing bugs and Issues that come up with existsing NumPy functionalities.
     
 
 ### Phase 2 : June 28th - July 22nd
@@ -148,7 +148,7 @@ Before the official time period begins, I plan to further study about the archit
     
     - Developing Regression analysis tools (for Linear, Bivatriate and Multivariate analysis)
     
-    - Providing tools for the development of Linear Models and determining the BLUE (Best Linear Unbiast Estimator for both non- full rank and full rank cases)
+    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e) and determining the BLUE (Best Linear Unbiast Estimator for both non- full rank and full rank cases)
     
     - Calculation of ANOVA Tables and determining of Confidence Interval / Limits for the provided data.
         
