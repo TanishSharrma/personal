@@ -305,6 +305,6 @@ I have undertaken two technical internships, one as a Software Engineer and one 
 
 I am eager to learn and have worked on several Machine Learning and Artificial Intelligence projects as well. Namely, Image Classifier using Convolutional Neural Network (CNN), Machine Learning models for datasets provided on Kaggle, Basics of CUDA and GPU Computing etc.
 
-I have undertaken substantial number of Mathematics and Computing classes and am ready to have first hand experience tackling real life issues with CuPy. Details of everything aforementioned are in my Resume : http://tanish.ueuo.com/cv.pdf
+I have undertaken substantial number of Mathematics, Statistics and Computing classes and am ready to have first hand experience tackling real life issues with CuPy. Details of everything aforementioned are in my Resume : http://tanish.ueuo.com/cv.pdf
 
 Looking forward to working on this project for the summers !
