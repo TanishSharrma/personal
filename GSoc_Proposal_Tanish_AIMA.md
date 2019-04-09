@@ -10,7 +10,7 @@ Tanish Sharrma, AIMA 2019
 | Email    | tanishsharrma22@gmail.com                              |
 | Mobile   | +91-7838063629 (WhatsApp as well)                      |
 | LinkedIn | http://linkedIn.com/in/TanishSharrma                   |
-| Github   | @TanishSharrma, https://github.com/TanishSharrma       |
+| GitHub   | @TanishSharrma, https://github.com/TanishSharrma       |
 | Samples  | https://github.com/TanishSharrma/PythonAlgorithms      |
 | Resume   | http://tanish.ueuo.com/cv.pdf                          |
 
@@ -38,7 +38,7 @@ For the upcoming 4th edition of "Artificial Intelligence: A Modern Approach", to
 
 I am currently pursuing a degree in Statistics (Mathematics) and Computers and have always found it fascinating and exciting to implement Statistical and Machine Learning tools and models to Computers. I believe that Google Summer of Code is the perfect opportunity for me to practically apply my knowledge and skills in a useful environment.
 
-I have a lot of experience programming in Python and have won competitions solving questions and developing algorithms. I have a striong passion for teaching and have first hand experience with pseudocode as well.
+I have a lot of experience programming in Python and have won competitions solving questions and developing algorithms. I have a strong passion for teaching and have first hand experience with pseudocode as well.
 
 I have been programming for over 12 years and have Machine Learning, Artificial Intelligence and CUDA experience as well. I have attended various conferences on GPU computing and am aware of the enormous potential it has. This summer, I will solely be focusing on Google Summer of Code and have no other commitments.
 
@@ -48,7 +48,7 @@ For full details on my projects, courses undertaken, internships, projects and r
 
 ## Coding Samples (Python):
 
-Coding samples for Python can found on my github : https://github.com/TanishSharrma/PythonAlgorithms.
+Coding samples for Python can found on my GitHub : https://github.com/TanishSharrma/PythonAlgorithms.
 
 A couple of examples are demonstrated below :
 
@@ -57,7 +57,7 @@ A couple of examples are demonstrated below :
 ```python
 '''
 
-Introduction to Binary Tree and its transversing functions in Python.
+Introduction to Binary Tree and its traversing functions in Python.
 Pre-requisites : The person should be well versed in basic Python, OOP and Recursion.
 By Tanish Sharrma
 
@@ -163,7 +163,7 @@ node_exists_1 = root.findNode(42)        # Finding the node with the value 42. R
 node_exists_2 = root.findNode(88)        # Finding the node with the value 88. Returns False
 ```
 
-### 2) Solving a Medium Difficulty Level Question (Solved in a Hackathon Cometition) :
+### 2) Solving a Medium Difficulty Level Question (Solved in a Hackathon Competition) :
 
 ```python
 '''
