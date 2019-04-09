@@ -1,6 +1,6 @@
-# Developing Algorithms in Python and Java
+# Developing  Python
 
-Tanish Sharrma, NumFocus 2019
+Tanish Sharrma, AIMA 2019
 
 
 ## Contact
@@ -328,10 +328,6 @@ Before the official time period begins, I plan to further study about the archit
     
     - Calculation of ANOVA Tables and determining of Confidence Interval / Limits for the provided data.
         
-
-### Future works (After GSoc)
-
-- In future, I plan to work on Game Theory applications' integration to CuPy (Axelrod Python library)
 
 ## Other Projects and Work Experience
 
