@@ -74,8 +74,8 @@ class Node:                     # Creating a class Node and defining it's functi
     def insert(self, data):
 
         if self.data:               # To check whether the current Node is empty or not
-            if data < self.data:    # If the Node is not empty, then if the data value < Node's Value, we move to its Left Child
-                if self.left is None:
+            if data < self.data:        # If the Node is not empty, then if the data value < Node's Value, 
+                if self.left is None:   # we move to its Left Child
                     self.left = Node(data)
                 else:
                     self.left.insert(data)
@@ -228,8 +228,8 @@ def make10(nums):
 # This function (make10) first sums the array and then takes the Highest multiple of 10 (Hx) which is less than
 # the sum of the array. It then loops the array x no of times by setting target as 10 and its multiples
 # till the highest multiple (Hx). if a match is found at the lowest level, the numbers returned in the array
-# from find10 are then removed and this new array is returned. The find10 numbers can also be added in the resultant
-# array by adding return [nums,a]
+# from find10 are then removed and this new array is returned. The find10 numbers can also be added in the
+# resultant array by adding return [nums,a]
 
 def sumArray(nums):
     sum = 0
