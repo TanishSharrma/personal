@@ -1,4 +1,4 @@
-# Statistical Developing and Expantion of CuPy
+# Statistical Developing and Expansion of CuPy
 
 Tanish Sharrma, NumFocus 2019
 
