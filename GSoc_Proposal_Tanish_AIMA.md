@@ -281,7 +281,7 @@ Before the official time period begins, I plan to further study the previous ver
     
   - Understand the procedure and code being followed in the previous editions.
     
-  - Learn about the models and methods followed and the algoritms explained in the book for better understanding of the coding style to be followed.
+  - Learn about the models, methods and algoritms explained in the book for better understanding of the coding style to be followed.
     
   - Study the previous AIMA GSoc projects
 
@@ -294,7 +294,7 @@ Before the official time period begins, I plan to further study the previous ver
 
   - All the work would be done in Python.
   
-  - Coding and providing examples for Theoretical Machine Learnning and Artificial Intelligence.
+  - Coding and providing examples for Theoretical Machine Learning and Artificial Intelligence.
   
   - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well.
 
