@@ -18,7 +18,7 @@ Tanish Sharrma, NumFocus 2019
 | S.No.    |                                         TOPIC                                        |
 |----------|--------------------------------------------------------------------------------------|
 |   1      | Abstract                                                                             |
-|   2      | Brief Roadmap and Aim                                                                |
+|   2      | Technical Details	                                                                  |
 |   3      | CuPy : Pre-GSoc Project Commits, Pull Requests, Issues and Community Work            |
 |   4      | Motivation and Personal Statement                                                    |
 |   5      | Benchmark Experiment: NumPy (CPU) vs CuPy (GPU)                                      |
@@ -31,7 +31,8 @@ Tanish Sharrma, NumFocus 2019
 
 CuPy is an open-source matrix library accelerated with NVIDIA CUDA. Aiming to bring Numpy syntax coding into the modern age of GPU calculations by adding advanced functions into CuPy. CuPy covers many of the functions that are provided by Numpy, but not all of them. To review the Numpy functions that CuPy doesn't cover yet, and implement them in CuPy along with some Scipy functions to use the full speed of the GPU. Developing a Numpy fallback model for missing modules and functions in CuPy.
 
-Providing for various Statistical analytics and Machine Learning tools to be implemented as well such as :  Regression Analysis, ANOVA tables, Linear Models, Confidence Intervals, Statistical Inference and Survey Sampling modules. This, expanding the number of functions available for use on the GPU to allow more code to execute transparently on the GPU.
+Providing for various Statistical analytics and simple Machine Learning tools to be implemented as well such as :  Regression Analysis, ANOVA tables, Linear Models, Confidence Intervals, Statistical Inference and Survey Sampling modules. Thus, expanding the number of functions available for use on the GPU to allow more code to execute transparently on the GPU.
+
 
 | **Intensity** | **Involves**  | **Mentors** |
 | ------------- | --------------|------------ |
@@ -51,7 +52,9 @@ Providing for various Statistical analytics and Machine Learning tools to be imp
 ## CuPy: Pre-GSoc Project Commits, Pull Requests and Issues and Community Work
 
 ### 1) Pull Request and commit : Added a new feature and resolved for Issue #2107 : bincount - Complex Weights :
+
        - https://github.com/cupy/cupy/pull/2139 
+       
        - https://github.com/cupy/cupy/issues/2107
 
 Issue #2107 (brought up by another use) :
@@ -63,7 +66,9 @@ However, if I give a complex64 array as the weights parameter, cupy.bincount fai
 Added a feature in "cupy.bincount" which will now be able to calculate even if the weights parameter is an array of complex         numbers (taken into account that not all values may be complex, hence setting a x+0j value to integer/float values). The calculation would be to do bincount twice (with real/imaginary part of the weight) [as suggested by "@kmaehashi"]
 
 ### 2) Submitted an Issue : CuPy not accepting list data types for operations #2138
+
        - https://github.com/cupy/cupy/issues/2138
+       
 
 For any function on a list(array) data type, Cupy gives an error unless the array has been defined as a cupy.array(). In, numpy however, the list data type is accepted regardless of it being passed as numpy.array() or not.
 
@@ -75,7 +80,9 @@ TypeError: Unsupported type <class 'list'>
 This could cause problems for people shifting from Numpy to Cupy.
 
 ### 3) Resolve Suggested
+
        - https://github.com/cupy/cupy/issues/2137
+       
 
 Suggested a resolve for an installation Issue by downloading the Microsoft Visual C++ Build Tools for installation of CuPy in Windows.
 
