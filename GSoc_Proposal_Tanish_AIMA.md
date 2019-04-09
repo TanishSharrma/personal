@@ -20,12 +20,10 @@ Tanish Sharrma, NumFocus 2019
 |----------|--------------------------------------------------------------------------------------|
 |   1      | Abstract                                                                             |
 |   2      | Technical Details	                                                                  |
-|   3      | Coding Samples                                                                       |
-|   4      | Motivation and Personal Statement                                                    |
-|   5      | Benchmark Experiment: NumPy (CPU) vs CuPy (GPU)                                      |
-|   6      | Project Timeline and Details                                                         |
-|   7      | Previous Projects and Work Experience                                                |
-|   8      | Dataset Result of the benchmark experiment (S.No. 5)                                 |
+|   3      | Motivation and Personal Statement                                                    |
+|   4      | Coding Samples                                                                       |
+|   5      | Project Timeline and Details                                                         |
+|   6      | Previous Projects and Work Experience                                                |
 
 
 ## Abstract
@@ -45,6 +43,16 @@ For the upcoming 4th edition of "Artificial Intelligence: A Modern Approach", to
   - Coding and providing examples for Theoretical Machine Learnning and Artificial Intelligence.
   
   - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well
+  
+  
+## Motivation and Personal Statement
+
+I am currently pursuing a degree in Statistics (Mathematics) and Computers and have always found it fascinating and exciting to implement Statistical and Machine Learning tools and models to Computers. I believe that Google Summer of Code is the perfect opportunity for me to practically apply my knowledge and skills in a useful environment.
+
+I have a lot of experience programming in Python and have won competitions solving questions and developing algorithms. I have a striong passion for teaching and have first hand experience with pseudocode as well.
+
+I have been programming for over 12 years and have Machine Learning, Artificial Intelligence and CUDA experience as well. I have attended various conferences on GPU computing and am aware of the enormous potential it has. This summer, I will solely be focusing on Google Summer of Code and have no other commitments.
+
 
 ## Coding Samples (Python):
 
@@ -52,55 +60,222 @@ Coding samples for Python can found on my github : https://github.com/TanishShar
 
 A couple of examples are demonstrated below :
 
-### 1) Introduction to Binary Tree
+### 1) Introduction to Binary Tree (Developed for teaching a college class) :
 
 ```python
-s = "Python syntax highlighting"
-print s
+'''
+
+Introduction to Binary Tree and its transversing functions in Python.
+Pre-requisites : The person should be well versed in basic Python, OOP and Recursion.
+By Tanish Sharrma
+
+'''
+
+class Node:                     # Creating a class Node and defining it's functions
+    def __init__(self, data):
+
+        self.left = None        # Left Child of the Node (Empty on creation)
+        self.right = None       # Right Child of the Node (Empty on creation)
+        self.data = data
+
+    # Insert Node by the method of recursion
+    def insert(self, data):
+
+        if self.data:               # To check whether the current Node is empty or not
+            if data < self.data:    # If the Node is not empty, then if the data value < Node's Value, we move to its Left Child
+                if self.left is None:
+                    self.left = Node(data)
+                else:
+                    self.left.insert(data)
+            elif data >= self.data:     # If the data value > Node's Value, we move to its Right Child
+                if self.right is None:
+                    self.right = Node(data)
+                else:
+                    self.right.insert(data)
+        else:
+            self.data = data            # If the node is empty, then we set this as our current Node.
+
+    # Print the Tree (Method used : Recursion)
+    def PrintTree(self):
+        if self.left:
+            self.left.PrintTree()
+        print( self.data),
+        if self.right:
+            self.right.PrintTree()
+
+        # Postorder traversal
+        # Left ->Right -> Root
+    def PostorderTraversal(self, root):
+        res = []
+        if root:
+            res = self.PostorderTraversal(root.left)
+            res = res + self.PostorderTraversal(root.right)
+            res.append(root.data)
+        return res
+
+        # Preorder traversal
+        # Root -> Left ->Right
+    def PreorderTraversal(self, root):
+        res = []
+        if root:
+            res.append(root.data)
+            res = res + self.PreorderTraversal(root.left)
+            res = res + self.PreorderTraversal(root.right)
+        return res
+
+        # Inorder traversal
+        # Left -> Root -> Right
+    def inorderTraversal(self, root):
+        res = []
+        if root:
+            res = self.inorderTraversal(root.left)
+            res.append(root.data)
+            res = res + self.inorderTraversal(root.right)
+        return res
+
+    # Finding a node by starting at the root node and moving down the tree
+    def findNode(self, n):
+        root = self
+        found = False
+        while True:
+            if root == None:
+                break
+            elif root.data == n:
+                found = True
+                break
+            elif root.data > n:
+                root = root.left
+            else:
+                root = root.right
+        if found:
+            return True
+        else:
+            return False
+
+# Testing out functions
+
+root = Node(27)     # Creating a new tree by setting the root Node
+root.insert(14)     # Inserting Nodes into the tree
+root.insert(35)
+root.insert(10)
+root.insert(19)
+root.insert(31)
+root.insert(42)
+root.insert(11)
+
+tran_1 = root.PostorderTraversal(root)   # Post Order Tree Traversal Left ->Right -> Root
+tran_2 = root.PreorderTraversal(root)    # Pre Order Tree Traversal Root -> Left -> Right
+tran_3 = root.inorderTraversal(root)     # In Order Tree Traversal Left -> Root -> Right
+
+node_exists_1 = root.findNode(42)        # Finding the node with the value 42. Returns True
+node_exists_2 = root.findNode(88)        # Finding the node with the value 88. Returns False
 ```
 
-### 2) Submitted an Issue : CuPy not accepting list data types for operations #2138
+### 2) Solving a Medium Difficulty Level Question (Solved in a Hackathon Cometition) :
 
-       - https://github.com/cupy/cupy/issues/2138
-       
+```python
+'''
+QUESTION :
 
-For any function on a list(array) data type, Cupy gives an error unless the array has been defined as a cupy.array(). In, numpy however, the list data type is accepted regardless of it being passed as numpy.array() or not.
+Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a multiple
+of 10, and the sum of the other group is odd. Every int must be in one group or the other. Write a recursive helper
+ method that takes whatever arguments you like, and make the initial call to your recursive helper from splitOdd10().
+ (No loops needed.)
 
-a = [10,15]
-b = cupy.log(a)
+splitOdd10([5, 5, 5]) → true
+splitOdd10([5, 5, 6]) → false
+splitOdd10([5, 5, 6, 1]) → true
 
-This won't work in Cupy but will work in Numpy. a = cupy.array([10,15]) would work.
-TypeError: Unsupported type <class 'list'>
-This could cause problems for people shifting from Numpy to Cupy.
+'''
 
-### 3) Resolve Suggested
+def find10(nums, target):
+    if nums[0]>target:
+        if len(nums)>1:
+            return find10(nums[1:],target)
+        else:
+            return [-1]
+    else:
+        tt = target-nums[0]
+        if tt == 0:
+            return [nums[0]]
+        if len(nums)<2:
+            return [-1]
+        else:
+            q = find10(nums[1:],tt)
+            if q[0] != -1:
+                q.append(nums[0])
+                return q
+            else:
+                return find10(nums[1:],target)
 
-       - https://github.com/cupy/cupy/issues/2137
-       
+ # This function (find10) finds and returns array of numbers whose sum equals to the target. If no
+ # such group is found, an array is returned with -1
 
-Suggested a resolve for an installation Issue by downloading the Microsoft Visual C++ Build Tools for installation of CuPy in Windows.
+def make10(nums):
+    if len(nums)==0:
+        return [-1]
+    sum = 0
+    for i in range(len(nums)):
+        sum += nums[i]
+    target = int((sum-(sum%10))/10)
+    for x in range(1, target+1):
+        a = find10(nums,x*10)
+        if a[0] != -1:
+            break
+    if a[0]!=-1:
+        for p in range(len(a)):
+            id = nums.index(a[p])
+            if id+1<len(nums):
+                nums = nums[0:id] + nums[id+1:]
+            else:
+                nums = nums[0:id]
+        return nums
+    else:
+        return [-1]
 
-## Motivation and Personal Statement
+# This function (make10) first sums the array and then takes the Highest multiple of 10 (Hx) which is less than
+# the sum of the array. It then loops the array x no of times by setting target as 10 and its multiples
+# till the highest multiple (Hx). if a match is found at the lowest level, the numbers returned in the array
+# from find10 are then removed and this new array is returned. The find10 numbers can also be added in the resultant
+# array by adding return [nums,a]
 
-I am currently pursuing a degree in Statistics (Mathematics) and Computers and have always found it fascinating and exciting to implement Statistical and Machine Learning tools and models to Computers. I believe that Google Summer of Code is the perfect opportunity for me to practically apply my knowledge and skills in a useful environment. CuPy offers the future of GPU computing by providing a faster alternative to the most used Python library (CPU Based); NumPy.
+def sumArray(nums):
+    sum = 0
+    for i in range(len(nums)):
+        sum += nums[i]
+    return sum
 
-I have been programming for over 12 years and have Machine Learning, Artificial Intelligence and CUDA experience as well. I have attended various conferences on GPU computing and am aware of the enormous potential it has. This summer, I will solely be focusing on Google Summer of Code and have no other commitments.
+def splitOdd10(nums):
+    if sumArray(nums)<10:
+        if sumArray(nums)%2==1:
+            return True
+        else:
+            return False
+    arr = make10(nums)
+    if arr[0] == -1:
+        return False
+    else :
+        a = sumArray(arr)
+        if a%2==1:
+            return True
+        else:
+            return False
 
-Ever since the true potential of GPU Computing has been observed, it has been seen that Next Generations of Servers seeming to replace the CPUs with faster, cost efficient, space- efficient performance and it's impact on the future of Deep Learning and Artificial Intelligence. It's effect on Data Science and Big Data promises huge potential as well.  A short experiment to benchmark performance of NumPy vs CuPy and this is one of the driving factors that motivated me to join this project:
+# Test Cases :
 
-## Benchmark Experiment
-
-Experiments were conducted by me by taking large samples random numbers (between 1 and 100 million) from a Random Distribution, obtaining their natural logarithm and then calculating the mean of those results. The average time taken per million values over the course of these 10 experiments has been depicted. The test results (Data Set) has been provided at the end of this proposal, after the graph demonstrating the advantages of CuPy :
-
-![](graph.png)
-
-Specifications:
-
-This experiment was conducted on a computer with the following hardware :
-
-  -  CPU : Ryzen 5 2400G (2018 Model)
-  -  RAM : 16 GB DDR4, 3000 Mhz
-  -  GPU : GTX 1050ti 4 GB GDDR5 (CUDA GPU Computing power 6.0)
+print (splitOdd10([5, 5, 5]))               # Returns True
+print (splitOdd10([5,5,6]))                 # Returns False
+print (splitOdd10([5, 5, 6, 1]))            # Returns True
+print (splitOdd10([6, 5, 5, 1]))            # Returns True
+print (splitOdd10([6, 5, 5, 1, 10]))        # Returns True
+print (splitOdd10([6, 5, 5, 5, 1]))         # Returns False
+print (splitOdd10([1]))                     # Returns True
+print (splitOdd10([]))                      # Returns False
+print (splitOdd10([10, 7, 5, 5]))           # Returns True
+print (splitOdd10([10, 0, 5, 5]))           # Returns False
+print (splitOdd10([10, 7, 5, 5, 2]))        # Returns True
+print (splitOdd10([10, 7, 5, 5, 1]))        # Returns False
+```
 
 ## Timeline
 
@@ -166,96 +341,4 @@ I am eager to learn and have worked on several Machine Learning and Artificial I
 
 I have undertaken substantial number of Mathematics and Computing classes and am ready to have first hand experience tackling real life issues with CuPy. Details of everything aforementioned are in my Resume : http://tanish.ueuo.com/cv.pdf
 
-## Benchmark Experiment Raw Data
-
-Data Size (in Million)	NumPy	CuPy
-		
-1	0.033001184	0.566046238
-2	0.080005407	0.01743865
-5	0.206018448	0.039004087
-10	0.295022726	0.073099852
-25	0.554044485	0.169439793
-50	1.098106384	0.283161163
-75	1.665119648	0.425621986
-100	2.23718524	0.566138744
-		
-1	0.028001547	0.52785635
-2	0.058004856	0.017000914
-5	0.155011892	0.041003704
-10	0.307024956	0.073003054
-25	0.57106328	0.173015356
-50	1.102072477	0.296225786
-75	1.736142635	0.434362888
-100	2.263186693	0.574162006
-		
-1	0.022001266	0.55436945
-2	0.046004057	0.015001297
-5	0.110008717	0.036002874
-10	0.220018387	0.062647104
-25	0.554045439	0.149012804
-50	1.093089819	0.274021387
-75	1.695138216	0.432865858
-100	2.27818656	0.57603097
-		
-1	0.031001329	0.549311638
-2	0.071005583	0.015000343
-5	0.231019258	0.033616543
-10	0.466037512	0.06113863
-25	0.562045097	0.153815746
-50	1.077087402	0.277036905
-75	1.709139585	0.424188137
-100	2.199180841	0.565034628
-		
-1	0.036002636	0.50888133
-2	0.065004349	0.014997959
-5	0.126009703	0.033002138
-10	0.217018366	0.062006712
-25	0.537043095	0.150317192
-50	1.078088522	0.274814367
-75	1.628133059	0.432635069
-100	2.258185863	0.563354969
-		
-1	0.027001858	0.500862837
-2	0.050004244	0.017000914
-5	0.11400938	0.039807558
-10	0.218034267	0.076020718
-25	0.558030128	0.169196606
-50	1.273121357	0.289659023
-75	1.965142965	0.427166462
-100	2.29218626	0.570260525
-		
-1	0.021996021	0.544084787
-2	0.049003124	0.016615152
-5	0.111011505	0.036003828
-10	0.221015453	0.065004587
-25	0.548044205	0.150896788
-50	1.091088772	0.271864176
-75	1.660151243	0.427860975
-100	2.300172806	0.56648159
-		
-1	0.025002241	0.512556791
-2	0.047003746	0.018000603
-5	0.10702467	0.0400033
-10	0.218000412	0.073000908
-25	0.543044329	0.170437336
-50	1.084089518	0.297247648
-75	1.661135197	0.432933569
-100	2.209177256	0.559125185
-		
-1	0.02200222	0.484235764
-2	0.044002771	0.015683651
-5	0.109008789	0.035800934
-10	0.240019321	0.064005375
-25	0.547044754	0.150373697
-50	1.099090815	0.278987885
-75	1.678136826	0.428530693
-100	2.221181393	0.562766314
-		
-1	0.022002697	0.534286261
-2	0.045002699	0.016898632
-5	0.109009266	0.0392313
-10	0.219034195	0.0752635
-25	0.543027163	0.164491415
-50	1.091090202	0.280375957
-75	1.670138121	0.434535027
-100 	2.197177887 0.564449072
+Looking forward to working on this project for the summers !
