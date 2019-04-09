@@ -90,10 +90,12 @@ Ever since the true potential of GPU Computing has been observed, it has been se
 ![](graph.png)
 
 Specifications:
+
 This experiment was conducted on a computer with the following hardware :
-CPU : Ryzen 5 2400G (2018 Model)
-RAM : 16 GB DDR4, 3000 MhZ
-GPU : GTX 1050ti 4 GB GDDR5 (CUDA GPU Computing power 6.0)
+
+  -  CPU : Ryzen 5 2400G (2018 Model)
+  -  RAM : 16 GB DDR4, 3000 Mhz
+  -  GPU : GTX 1050ti 4 GB GDDR5 (CUDA GPU Computing power 6.0)
 
 ## Timeline
 
