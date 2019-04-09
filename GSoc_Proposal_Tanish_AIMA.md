@@ -19,11 +19,10 @@ Tanish Sharrma, AIMA 2019
 | S.No.    |                                         TOPIC                                        |
 |----------|--------------------------------------------------------------------------------------|
 |   1      | Abstract                                                                             |
-|   2      | Technical Details and Plan                                                           |
-|   3      | Motivation and Personal Statement                                                    |
-|   4      | Coding Samples                                                                       |
-|   5      | Project Timeline and Details                                                         |
-|   6      | Previous Projects and Work Experience                                                |
+|   2      | Motivation and Personal Statement                                                    |
+|   3      | Coding Samples                                                                       |
+|   4      | Project Timeline and Details                                                         |
+|   5      | Previous Projects and Work Experience                                                |
 
 
 ## Abstract
@@ -34,26 +33,6 @@ For the upcoming 4th edition of "Artificial Intelligence: A Modern Approach", to
 | ------------- | -------------------------------- |------------------ |
 | Intermediate  | Python, Machine Learning & AI    | Pierre de Lacaze  |
                   
-## Technical Details and Plan
-
-  - Implementing pseudocode for algorithms for easy and simple understand of functions.
-
-  - All the work would be done in Python.
-  
-  - Coding and providing examples for Theoretical Machine Learnning and Artificial Intelligence.
-  
-  - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well.
-  
-  - Learn about the requirements of the author.
-    
-  - Understand the procedure and code being followed in the previous editions.
-    
-  - Learn about the models and methods followed and the algoritms explained in the book for better understanding of the coding style to be followed.
-    
-  - Study the previous AIMA GSoc projects
-  
-  - After understanding the work during the "Community Bonding period", start creating pull requests from the github repository and begin coding.
-  
   
 ## Motivation and Personal Statement
 
@@ -63,7 +42,9 @@ I have a lot of experience programming in Python and have won competitions solvi
 
 I have been programming for over 12 years and have Machine Learning, Artificial Intelligence and CUDA experience as well. I have attended various conferences on GPU computing and am aware of the enormous potential it has. This summer, I will solely be focusing on Google Summer of Code and have no other commitments.
 
-I have undertaken several classes in my college related to Mathematics, Statistics and Computing. I have profound interest in Game Theory and found ways to implement it in Python (Axelrod Lib Python)
+I have undertaken several classes in my college related to Mathematics, Statistics and Computing. I have profound interest in Game Theory and found ways to implement it in Python (Axelrod Lib Python).
+
+For full details on my projects, courses undertaken, internships, projects and research papers, please refer to my Resume : http://tanish.ueuo.com.cv.pdf
 
 ## Coding Samples (Python):
 
@@ -287,6 +268,36 @@ print (splitOdd10([10, 0, 5, 5]))           # Returns False
 print (splitOdd10([10, 7, 5, 5, 2]))        # Returns True
 print (splitOdd10([10, 7, 5, 5, 1]))        # Returns False
 ```        
+
+## Project Timeline and Details
+
+### **Community Bonding Period** : May 6th - May 27th 
+
+Before the official time period begins, I plan to further study the previous verions of AIMA (Artificial Intelligence: A Modern Approach). During this period, under my mentor, I plan to :
+
+  - Solve issues and bugs being brought up by the members of the community.
+    
+  - Learn about the requirements of the author.
+    
+  - Understand the procedure and code being followed in the previous editions.
+    
+  - Learn about the models and methods followed and the algoritms explained in the book for better understanding of the coding style to be followed.
+    
+  - Study the previous AIMA GSoc projects
+
+
+### Working Period : May 27th - August 19th
+
+  - After understanding the work during the "Community Bonding period", start creating pull requests from the github repository and begin coding.
+  
+  - Implementing pseudocode for algorithms for easy and simple understand of functions.
+
+  - All the work would be done in Python.
+  
+  - Coding and providing examples for Theoretical Machine Learnning and Artificial Intelligence.
+  
+  - Ensuring very clear coding, commenting, and documentation writing skills and showcasing enthusiasm for helping other people by explaining things well.
+
 
 ## Other Projects and Work Experience
 
