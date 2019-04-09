@@ -10,7 +10,7 @@ Tanish Sharrma, NumFocus 2019
 | Email    | tanishsharrma22@gmail.com                              |
 | Mobile   | +91-7838063629 (WhatsApp as well)                      |
 | LinkedIn | http://linkedIn.com/in/TanishSharrma                   |
-| Github   | @TanishSharrma, https://github.com/TanishSharrma       |
+| GitHub   | @TanishSharrma, https://github.com/TanishSharrma       |
 | Resume   | http://tanish.ueuo.com/cv.pdf                          |
 
 ## INDEX
@@ -43,11 +43,11 @@ Providing for various Statistical analytics and simple Machine Learning tools to
 
   - All the work would be done in Python.
   
-  - Statistical and Mathematical analytics tools would be developed to accomodate large data sets.
+  - Statistical and Mathematical analytics tools would be developed to accommodate large data sets.
   
   - Introduction of simple Machine Learning tools.
   
-  - All changes would be commited to the "master" branch in the CuPy github repository.
+  - All changes would be committed to the "master" branch in the CuPy GitHub repository.
 
 ## CuPy: Pre-GSoc Project Commits, Pull Requests and Issues and Community Work
 
@@ -57,13 +57,16 @@ Providing for various Statistical analytics and simple Machine Learning tools to
        
        - https://github.com/cupy/cupy/issues/2107
 
-Issue #2107 (brought up by another use) :
-"bincount is a useful way to average values in an array with variable length bins (another is np.add.at, but that is not implemented here). This is also described in the numpy.bincount manual (https://docs.scipy.org/doc/numpy/reference/generated/numpy.bincount.html).
-However, if I give a complex64 array as the weights parameter, cupy.bincount fails with a NVRTCError/CompileException:"
 
 **Resolved :**
 
 Added a feature in "cupy.bincount" which will now be able to calculate even if the weights parameter is an array of complex         numbers (taken into account that not all values may be complex, hence setting a x+0j value to integer/float values). The calculation would be to do bincount twice (with real/imaginary part of the weight) [as suggested by "@kmaehashi"]
+
+Issue #2107 (brought up by another use) :
+
+"bincount is a useful way to average values in an array with variable length bins (another is np.add.at, but that is not implemented here). This is also described in the numpy.bincount manual (https://docs.scipy.org/doc/numpy/reference/generated/numpy.bincount.html).
+However, if I give a complex64 array as the weights parameter, cupy.bincount fails with a NVRTCError/CompileException:"
+
 
 ### 2) Submitted an Issue : CuPy not accepting list data types for operations #2138
 
@@ -133,7 +136,7 @@ Before the official time period begins, I plan to further study about the archit
     
     - Rigorously testing and comparing code to make it easier for NumPy users to port of CuPy.
     
-    - Fixing bugs and Issues that come up with existsing NumPy functionalities.
+    - Fixing bugs and Issues that come up with existing NumPy functionalities.
     
 
 ### Phase 2 : June 28th - July 22nd
@@ -151,11 +154,11 @@ Before the official time period begins, I plan to further study about the archit
 
 ### Phase 3 : July 26th - August 19th
 
-    - Introducing Machine Learning models (mainly related to Mathematics and Statistcis) to the CuPy library and ensure its stability.
+    - Introducing Machine Learning models (mainly related to Mathematics and Statistics) to the CuPy library and ensure its stability.
     
-    - Developing Regression analysis tools (for Linear, Bivatriate and Multivariate analysis)
+    - Developing Regression analysis tools (for Linear, Bivariate and Multivariate analysis)
     
-    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e) and determining the BLUE (Best Linear Unbiast Estimator for both non- full rank and full rank cases)
+    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e) and determining the BLUE (Best Linear Unbiased Estimator for both non- full rank and full rank cases)
     
     - Calculation of ANOVA Tables and determining of Confidence Interval / Limits for the provided data.
         
