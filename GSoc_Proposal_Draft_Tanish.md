@@ -47,7 +47,8 @@ To Formalize CuPy Benchmark for code testing, when doing Continuous Integration 
 ## CuPy: Pre-GSoc Project Commits, Pull Requests and Issues and Community Work
 
 ### 1) Pull Request and commit : Added a new feature and resolved for Issue #2107 : bincount - Complex Weights :
-       [https://github.com/cupy/cupy/pull/2139] [https://github.com/cupy/cupy/issues/2107]
+       - https://github.com/cupy/cupy/pull/2139 
+       - https://github.com/cupy/cupy/issues/2107
 
 Issue #2107 (brought up by another use) :
 "bincount is a useful way to average values in an array with variable length bins (another is np.add.at, but that is not implemented here). This is also described in the numpy.bincount manual (https://docs.scipy.org/doc/numpy/reference/generated/numpy.bincount.html).
@@ -58,7 +59,7 @@ However, if I give a complex64 array as the weights parameter, cupy.bincount fai
 Added a feature in "cupy.bincount" which will now be able to calculate even if the weights parameter is an array of complex         numbers (taken into account that not all values may be complex, hence setting a x+0j value to integer/float values). The calculation would be to do bincount twice (with real/imaginary part of the weight) [as suggested by "@kmaehashi"]
 
 ### 2) Submitted an Issue : CuPy not accepting list data types for operations #2138
-       [https://github.com/cupy/cupy/issues/2138]
+       - https://github.com/cupy/cupy/issues/2138
 
 For any function on a list(array) data type, Cupy gives an error unless the array has been defined as a cupy.array(). In, numpy however, the list data type is accepted regardless of it being passed as numpy.array() or not.
 
@@ -70,7 +71,7 @@ TypeError: Unsupported type <class 'list'>
 This could cause problems for people shifting from Numpy to Cupy.
 
 ### 3) Resolve Suggested
-       [https://github.com/cupy/cupy/issues/2137]
+       - https://github.com/cupy/cupy/issues/2137
 
 Suggested a resolve for an installation Issue by downloading the Microsoft Visual C++ Build Tools for installation of CuPy in Windows.
 
