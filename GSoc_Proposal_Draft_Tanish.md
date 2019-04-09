@@ -1,4 +1,4 @@
-# Developing and Expanding CuPy library
+# Statistical Developing and Expantion of CuPy
 
 Tanish Sharrma, NumFocus 2019
 
