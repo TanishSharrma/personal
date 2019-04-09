@@ -154,11 +154,13 @@ Before the official time period begins, I plan to further study about the archit
 
 ### Phase 3 : July 26th - August 19th
 
-    - Introducing Machine Learning models (mainly related to Mathematics and Statistics) to the CuPy library and ensure its stability.
+    - Introducing Machine Learning models (mainly related to Mathematics and Statistics) to the CuPy library 
+    - and ensure its stability.
     
     - Developing Regression analysis tools (for Linear, Bivariate and Multivariate analysis)
     
-    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e) and determining the BLUE (Best Linear Unbiased Estimator for both non- full rank and full rank cases)
+    - Providing tools for the development of Linear Models (Y = A0 + A1X1 + A2X2 + A3X3 + … + ANXN + e)
+    - determining the BLUE (Best Linear Unbiased Estimator for both non- full rank and full rank cases)
     
     - Calculation of ANOVA Tables and determining of Confidence Interval / Limits for the provided data.
         
