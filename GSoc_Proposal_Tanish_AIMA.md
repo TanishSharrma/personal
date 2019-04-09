@@ -169,10 +169,11 @@ node_exists_2 = root.findNode(88)        # Finding the node with the value 88. R
 '''
 QUESTION :
 
-Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a multiple
-of 10, and the sum of the other group is odd. Every int must be in one group or the other. Write a recursive helper
- method that takes whatever arguments you like, and make the initial call to your recursive helper from splitOdd10().
- (No loops needed.)
+Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is 
+a multiple of 10, and the sum of the other group is odd. Every int must be in one group or the other. Write 
+a recursive helper method that takes whatever arguments you like, and make the initial call to your recursive 
+helper from splitOdd10().
+(No loops needed.)
 
 splitOdd10([5, 5, 5]) → true
 splitOdd10([5, 5, 6]) → false
@@ -225,8 +226,8 @@ def make10(nums):
     else:
         return [-1]
 
-# This function (make10) first sums the array and then takes the Highest multiple of 10 (Hx) which is less than
-# the sum of the array. It then loops the array x no of times by setting target as 10 and its multiples
+# This function (make10) first sums the array and then takes the Highest multiple of 10 (Hx) which is less
+#  thanthe sum of the array. It then loops the array x no of times by setting target as 10 and its multiples
 # till the highest multiple (Hx). if a match is found at the lowest level, the numbers returned in the array
 # from find10 are then removed and this new array is returned. The find10 numbers can also be added in the
 # resultant array by adding return [nums,a]
